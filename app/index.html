@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="tagline">Every trophy, tracked. A roadmap to the platinum, and a cited guide for each one — all offline.</p>
+  <div class="stats" id="stats">
+    <div class="stat-big"><span id="earnedCount">0</span><span class="stat-of">/ 55 earned</span></div>
+    <div class="stat-grades" id="gradeCounts"></div>
+    <div class="plat-bar" title="Platinum progress"><div class="plat-fill" id="platFill"></div><span id="platLabel">0% to platinum</span></div>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search trophies…" autocomplete="off">
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="chip active">All</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+    <button type="button" data-kind="activities" class="chip">Activities</button>
+    <button type="button" data-kind="online" class="chip">Online</button>
+  </div>
+  <select id="gradeFilter" aria-label="Filter by grade">
+    <option value="all">All grades</option>
+    <option value="platinum">Platinum</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+    <option value="bronze">Bronze</option>
+  </select>
+  <select id="statusFilter" aria-label="Filter by progress">
+    <option value="all">All trophies</option>
+    <option value="earned">Earned</option>
+    <option value="remaining">Remaining</option>
+  </select>
+  <label class="spoiler-toggle"><input id="spoiler" type="checkbox"> Hide spoilers</label>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button">Reset</button>
+</nav>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum <span class="roadmap-meta">Difficulty 4/10 &middot; about 200 hours &middot; 1 playthrough &middot; 0 online trophies</span></h2>
+  <div class="stages">
+    <article class="stage">
+      <h3><span class="stage-num">1</span> Play the story <span class="stage-hours">60–80 h</span></h3>
+      <p>Finish all 5 chapters. Do Lucia&rsquo;s balcony meditation in Chapter 1 — the one possibly missable trophy. Keep a manual save at each chapter start: no mission replay, no New Game+.</p>
+      <p class="stage-covers">Covers: all 17 story trophies, side-character finales, first activities.</p>
+    </article>
+    <article class="stage">
+      <h3><span class="stage-num">2</span> 100% checklist <span class="stage-hours">~100 h</span></h3>
+      <p>After the credits it opens under Progress &gt; Stats &gt; 100% Completion — lenient, about 60% of the game. Do 70 of 80 challenges, scan 200 of 277 vehicles, study 100 of 255 animals. Rob all 8 bank vaults and all 39 gang operations.</p>
+      <p class="stage-covers">Covers: A Long Road, stunts, ranges, races, collectibles, vaults.</p>
+    </article>
+    <article class="stage">
+      <h3><span class="stage-num">3</span> Cleanup <span class="stage-hours">~10 h</span></h3>
+      <p>Stranger strands, partner trophies, one-offs (cocktail, showroom, bowling alley), max strength for both, 500 Criminal Profile actions, money trophies. Then the platinum pops.</p>
+      <p class="stage-covers">Covers: the remaining activities and the platinum itself.</p>
+    </article>
+  </div>
+  <p class="roadmap-note">Cheats disable trophies and saving — keep them off your trophy save. Nothing on the 100% checklist is missable.</p>
+</section>
+
+<main>
+  <p class="list-meta" id="listMeta">55 trophies</p>
+  <div class="trophy-list" id="trophyList"></div>
+  <p class="empty-note" id="emptyNote" hidden>No trophies match these filters.</p>
+</main>
+
+<footer>
+  <p>Sources: trophy names, descriptions and grades as listed by Exophase and PSNProfiles (via Planet GTA 6). Each guide below is written in our own words from PowerPyx&rsquo;s GTA 6 Trophy Guide &amp; Roadmap, with the source named beside it. Five trophies had no confirmed method at launch — those guides say so honestly.</p>
+  <p>Works fully offline: this page loads nothing from the network. Not affiliated with Rockstar Games or PlayStation.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
